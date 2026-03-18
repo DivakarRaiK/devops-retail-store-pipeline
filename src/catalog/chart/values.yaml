@@ -70,9 +70,9 @@ app:
 mysql:
   create: true
   image:
-    repository: 220755213644.dkr.ecr.us-west-2.amazonaws.com/retail-store-catalog
+    repository: mysql
     pullPolicy: IfNotPresent
-    tag: "0fd57ea"
+    tag: "8.0"
   service:
     type: ClusterIP
     port: 3306
