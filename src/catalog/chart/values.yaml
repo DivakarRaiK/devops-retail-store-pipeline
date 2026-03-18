@@ -60,7 +60,7 @@ configMap:
 app:
   persistence:
     provider: mysql
-    endpoint: "catalog-db"
+    endpoint: "retail-store-catalog-mysql"
     database: "catalog"
     secret:
       create: true
