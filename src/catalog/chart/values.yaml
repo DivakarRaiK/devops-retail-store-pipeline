@@ -59,16 +59,16 @@ configMap:
   name:
 app:
   persistence:
-    provider: in-memory
-    endpoint: ""
+    provider: mysql
+    endpoint: "catalog-db"
     database: "catalog"
     secret:
       create: true
       name: catalog-db
       username: catalog
-      password: ""
+      password: "password123"
 mysql:
-  create: false
+  create: true
   image:
     repository: 220755213644.dkr.ecr.us-west-2.amazonaws.com/retail-store-catalog
     pullPolicy: IfNotPresent
