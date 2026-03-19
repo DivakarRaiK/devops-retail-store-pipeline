@@ -124,7 +124,7 @@ ingresses:
     tls:
       - secretName: tls-secret
         hosts:
-          - retail-store.trainwithshubham.com
+          - retail-store.example.com
 
 # Cert Manager Configuration
 certManager:
