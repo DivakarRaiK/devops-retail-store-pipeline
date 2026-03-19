@@ -112,7 +112,7 @@ ingresses:
   - name: domain
     className: "nginx"
     hosts:
-      - retail-store.trainwithshubham.com
+      - retail-store.example.com
     annotations:
       nginx.ingress.kubernetes.io/ssl-redirect: "true"
       nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
@@ -129,7 +129,7 @@ ingresses:
 # Cert Manager Configuration
 certManager:
   createClusterIssuer: true
-  email: trainwithshubham@gmail.com
+  email: admin@example.com
   clusterIssuerName: "letsencrypt-prod"
   server: "https://acme-v02.api.letsencrypt.org/directory"
   privateKeySecretName: "letsencrypt-prod-key"
